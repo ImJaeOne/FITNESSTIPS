@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans','맑은 고딕','Malgun Gothic',Arial,Helvetica,sans-serif,Lucida,Grande,'Microsoft YaHei','Hiragino Sans GB',SimSun,Meiryo;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: none;
+}
+ul{
+    list-style: none;
+}
+#title {
+    cursor: pointer;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MTdfMjQg%2FMDAxNjE4NjE5MTE1NDg5.Gb6D8nWPkSCa6pI4KmGvCpyF_Yv0fgB68-C697nRqe8g.3-7ABRqFfs_DIFGHiaBOfTt2vBC4ry223Kr7lZe_S5Ig.JPEG.nagne7272%2F%25B8%25B6%25BA%25ED%252C%25BE%25EE%25BA%25A5%25C1%25AE%25BD%25BA%252C%25B0%25CB%25C0%25BA%25BB%25F6%252C%25BE%25EE%25B5%25CE%25BF%25EE%25BB%25F6_%25B9%25E8%25B0%25E6%25C8%25AD%25B8%25E9_%252811%2529.jpg&type=sc960_832');
+    color: white;
+    font-size: 100px;
+    position: relative;
+}
+#title{
+    position: absolute;
+    top: 55px;
+    min-width: 660px;
+}
+#nav {
+    min-width: 800px;
+    width: 80vw;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    border-top: solid white 1px;
+}
+#nav li{
+    cursor: pointer;
+}
+.floating_item1{
+    position:fixed;
+    color: white;
+    background-color: black;
+    top: 400px;
+}
+.floating_item1 ul{
+    padding: 0;
+}
+.floating_item2{
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    z-index: 9999;
+}
+.floating_item2 li{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.content{
+    height:1000px;
+}

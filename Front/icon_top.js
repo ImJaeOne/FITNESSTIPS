@@ -1,13 +1,14 @@
-const topBtn = document.getElementsByClassName("topBtn");
-const nav = document.getElementById("nav");
+const topBtn = document.getElementById("topBtn");
+const nav = document.getElementById("wrap_nav");
 
-window.onscroll = function(e){scrollfunction();console.log(e)};
+window.onscroll = function(){scrollfunction()};
+topBtn.addEventListener("click",topfunction);
 
 function scrollfunction(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        topBtn[0].style.display = "block";
+        topBtn.style.display = "block";
     } else{
-        topBtn[0].style.display = "none";
+        topBtn.style.display = "none";
     }
 }
 
@@ -15,6 +16,3 @@ function topfunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-console.log(topBtn[0]);
-console.log(nav);

@@ -61,13 +61,17 @@ ul{
 .floating_item1 ul{
     padding: 0;
 }
-.icon_top{
+#icon{
     position: fixed;
     right: 50px;
     bottom: 10px;
     z-index: 9999;
 }
-.icon_top li{
+#icon li{
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    z-index: 9999;
     cursor: pointer;
     background-color: black;
     color: white;

@@ -32,6 +32,7 @@ ul{
     color: white;
     font-size: 100px;
     position: relative;
+    margin-bottom: 60px;
 }
 #title{
     position: absolute;
@@ -51,15 +52,6 @@ ul{
 }
 #wrap_nav li{
     cursor: pointer;
-}
-.floating_item1{
-    position:fixed;
-    color: white;
-    background-color: black;
-    top: 400px;
-}
-.floating_item1 ul{
-    padding: 0;
 }
 #icon{
     position: fixed;
@@ -81,6 +73,21 @@ ul{
     margin-bottom: 20px;
     padding: 20px;
 }
-.content{
-    height:1000px;
+#wrap_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wrap_content [class*="inner"]{
+    width: 1200px;
+    height: 800px;
+    border: solid 3px black;
+    margin-bottom: 80px;
+}
+#footer{
+    background-color: black;
+}
+#footer div{
+    height: 100px;
 }
